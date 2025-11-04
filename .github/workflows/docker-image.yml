@@ -34,7 +34,7 @@ jobs:
           context: ./springbootbackend
           file: ./springbootbackend/backend.Dockerfile
           push: true
-          platforms: linux/amd64
+          platforms: linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
 
       # Step 5 — Build & Push Frontend (amd64)
